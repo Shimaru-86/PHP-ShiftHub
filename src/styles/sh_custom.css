@@ -1,0 +1,13 @@
+.sh-button{
+  background-color: #00bf63;
+  cursor: pointer;
+}
+
+.sh-button:hover{
+  color:#fff!important;
+  background-color:#569f6f!important;
+}
+
+.sh-pointer{
+  cursor: pointer;
+}

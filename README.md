@@ -13,3 +13,20 @@ O PHP-ShiftHub é um framework PHP leve e versátil que capacita os desenvolvedo
 
 # Por que usar o PHP-ShiftHub?
 O PHP-ShiftHub é perfeito para desenvolvedores que já dominam o básico do PHP, mas estão buscando expandir suas habilidades sem se aventurar na complexidade dos frameworks mais completos. Ele é projetado para servir como um trampolim, ajudando você a evoluir seus projetos e suas habilidades de codificação.
+
+/meu-projeto
+│
+├── /lib
+│   ├── Router.php
+│   └── Middleware.php       <- Arquivo para lógica de middleware
+│
+├── /src
+│   └── /routes
+│       └── Routes.php       <- Rotas
+│
+├── /pages
+│   ├── welcome.php
+│   └── about.php
+│
+└── index.php
+

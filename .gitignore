@@ -1,0 +1,16 @@
+#Ignorar arquivos testes
+testes/
+
+#Ignorar Backup e dados
+BackUp/
+dataLuizJson/
+controlevtf/escrevente/data/
+verbetes.json
+
+#Ignorar  PWA/TWA
+.well-known/
+pwabuilder-sw.js
+
+#Ignorar arquivos importantes
+.htaccess
+senha.php
