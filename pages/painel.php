@@ -1,32 +1,21 @@
-<?php
-  header('Content-Type: text/html; charset=utf-8');
-
-  if (!isset($_SESSION['apresentacao'])) {
-    // Se a variável de sessão não estiver definida, defina-a com o valor 0
-    $_SESSION['apresentacao'] = 0;
-  }
-?>
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
   <?php include("./src/components/head/Head.php"); //Inclue os dados gerais do Head ?>
-
-  <!-- Adicionar outros dados para o Head -->
   <title>PHP-ShiftHub</title>
-
-  <!--Ativa o Service Worker - PWA Builder -->
-  <script>
-    if(typeof navigator.serviceWorker !== 'undefined') {
-      navigator.serviceWorker.register('pwabuilder-sw.js');
-    }
-  </script>
 </head>
 
 <body class="w3-theme-l5">
-  <!-- Top Menu / Navbar -->
-  <?php //include("./src/components/navbar/Navbar.php"); ?>
+  <div class="w3-container w3-card-4 w3-margin w3-light-grey w3-round-large">
+    <h1 class="w3-center">Estou na página PAINEL</h1>
+    <p>Esta é uma área restrita, que apenas usuários logados no sistemas podem acessar.</p>
 
-  <h1>Estou na página PAINEL</h1>
+    <br>
+
+    <!-- Botão de Logout -->
+    <form action="<?php echo BASE_URL; ?>/logout" method="GET">
+      <button class="w3-button w3-section w3-blue w3-ripple w3-round-large" type="submit">Sair</button>
+    </form>
+  </div>
 </body>
 </html>

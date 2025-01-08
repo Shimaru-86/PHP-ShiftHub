@@ -6,6 +6,10 @@ class Route {
     self::$routes['GET'][$url] = compact('callback', 'middlewares');
   }
 
+  public static function post($url, $callback, $middlewares = []) {
+    self::$routes['POST'][$url] = compact('callback', 'middlewares');
+  }
+
   public static function dispatch() {
     $requestedUrl = isset($_GET['url']) ? '/' . trim($_GET['url'], '/') : '/';
     $method = $_SERVER['REQUEST_METHOD'];
@@ -15,9 +19,28 @@ class Route {
       $callback = $route['callback'];
       $middlewares = $route['middlewares'];
 
+      // Carregar controller automaticamente
+      if (is_array($callback)) {
+        $controller = $callback[0];
+        $method = $callback[1];
+
+        $controllerFile = __DIR__ . '/../controllers/' . $controller . '.php';
+        
+        if (file_exists($controllerFile)) {
+          require_once $controllerFile;
+        } else {
+          throw new Exception("Controller {$controller} não encontrado.");
+        }
+
+        // Criar instância do controller (caso não seja estático)
+        if (!method_exists($controller, $method)) {
+          throw new Exception("Método {$method} não existe no controller {$controller}.");
+        }
+      }
+
       // Encadeia middlewares
       $next = function () use ($callback) {
-          return call_user_func($callback);
+        return call_user_func($callback);
       };
 
       foreach (array_reverse($middlewares) as $middleware) {

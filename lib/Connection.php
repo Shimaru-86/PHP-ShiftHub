@@ -1,11 +1,12 @@
 <?php
   class Connection {
+    private $connect = null;
+
     //Teste
     private string $host = "localhost";
     private string $user = "root";
     private string $pass = "";
-    private string $dbname = "bancodedados";
-    private $connect = null;
+    private string $dbname = "php_shifthub_teste";
 
     /*
     //REAL
@@ -13,7 +14,6 @@
     private string $user = "user";
     private string $pass = "pass";
     private string $dbname = "Banco_de_Dados";
-    private $connect = null;
     */
 
     public function connectDB() {

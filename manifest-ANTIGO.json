@@ -1,0 +1,49 @@
+{
+  "background_color": "#f2f8f4",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "Meu Projeto PHP-ShiftHub",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "MeuProjeto",
+  "start_url": "https://meuprojeto.com/",
+  "theme_color": "#7eb993",
+  "screenshots": [
+    {
+      "src": "./src/images/todos_dispositivos.png",
+      "type": "image/png",
+      "sizes": "1920x1080"
+    }
+  ],
+  "icons": [
+    {
+      "src":"./src/images/icon.png",
+      "sizes":"512x512",
+      "type":"image/png"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "MeuProjeto",
+      "url": "https://meuprojeto.com/",
+      "description": "Descrição desta imagem"
+    }
+  ],
+  "id": "https://meuprojeto.com/",
+  "description": "Descrição do site ou aplicativo",
+  "lang": "pt",
+  "display_override": [
+    "fullscreen",
+    "window-controls-overlay"
+  ],
+  "categories": [
+    "books",
+    "education",
+    "entertainment",
+    "lifestyle",
+    "navigation",
+    "productivity",
+    "social",
+    "utilities"
+  ]
+}

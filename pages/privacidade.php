@@ -1,25 +1,13 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Política de Privacidade</title>
-  <style>
-      body {
-          font-family: Arial, sans-serif;
-          line-height: 1.6;
-          margin: 20px;
-      }
-      h1, h2, h3 {
-          color: #333;
-      }
-      p {
-          margin: 10px 0;
-      }
-  </style>
+  <?php include("./src/components/head/Head.php"); //Inclue os dados gerais do Head ?>
+  <title>PHP-ShiftHub</title>
 </head>
-<body>
-    <h1>Política de Privacidade</h1>
+
+<body class="w3-theme-l5">
+  <div class="w3-container w3-card-4 w3-margin w3-light-grey w3-round-large">
+    <h1 class="w3-center">Política de Privacidade - RASCUNHO</h1>
     <p>Esta Política de Privacidade descreve como coletamos, usamos e protegemos suas informações ao utilizar nosso site/aplicativo.</p>
 
     <h2>Informações que Coletamos</h2>
@@ -36,5 +24,6 @@
 
     <h2>Contate-nos</h2>
     <p>Se você tiver alguma dúvida sobre esta Política de Privacidade, entre em contato conosco através do nosso site/aplicativo.</p>
+  </div>
 </body>
 </html>

@@ -1,5 +1,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#7eb993">
+<meta name="description" content="Framework PHP para criação de sites e PWAs de forma rápida e organizada.">
 <!-- Favicon -->
 <link rel="icon" href="./src/images/icon.png" />
 <!-- Folhas de Estilo -->
@@ -17,3 +19,28 @@
 <!-- Manifest -->
 <link rel="manifest" href="./manifest.json" />
 <link rel="icons" href="./icons.json" />
+<!-- Service Worker -->
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('./pwabuilder-sw.js')
+        .then((registration) => {
+          console.log('Service Worker registrado:', registration);
+        })
+        .catch((error) => {
+          console.log('Falha no registro do Service Worker:', error);
+        });
+    });
+  }
+</script>
+
+<!-- Service Worker - Modelo Antigo - Remover se não for necessário -->
+<!--
+
+  <script>
+    if(typeof navigator.serviceWorker !== 'undefined') {
+      navigator.serviceWorker.register('pwabuilder-sw.js');
+    }
+  </script>
+
+-->
