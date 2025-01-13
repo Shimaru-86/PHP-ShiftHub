@@ -32,6 +32,18 @@
     return view('about');
   });
 
+  Route::get('/apoiar', function () {
+    return view('support');
+  });
+
+  Route::get('/exemplos', function () {
+    return view('examples');
+  });
+
+  Route::get('/home', function () {
+    return view('welcome');
+  });
+
   Route::get('/login', function () {
     return view('login');
   });
