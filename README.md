@@ -15,17 +15,67 @@ O PHP-ShiftHub é perfeito para desenvolvedores que já dominam o básico do PHP
 
 /meu-projeto
 │
+├── /config
+│   └── Config.php
+│
+├── /controllers
+│   ├── AuthController.php
+│   └── RegisterController.php
+│
 ├── /lib
-│   ├── Router.php
-│   └── Middleware.php       <- Arquivo para lógica de middleware
+│   ├── /midlewares
+│   │   ├── Authentication.php
+│   │   ├── Log.php
+│   │   └── Validation.php
+│   ├── Connection.php
+│   └── Router.php
+│
+├── /pages
+│   ├── about.php
+│   ├── examples.php
+│   ├── login.php
+│   ├── painel.php
+│   ├── privacy.php
+│   ├── register.php
+│   ├── support.php
+│   └── welcome.php
 │
 ├── /src
-│   └── /routes
-│       └── Routes.php       <- Rotas
+│   ├── /components
+│   │   ├── /ads
+│   │   ├── /blocks
+│   │   ├── /footer
+│   │   │   └── Footer.php
+│   │   ├── /head
+│   │   │   └── Head.php
+│   │   ├── /header
+│   │   ├── /modals
+│   │   └── /navbar
+│   │       └── Navbar.php
+│   ├── /documents
+│   ├── /images
+│   │   ├── icon.png
+│   │   ├── logo.png
+│   │   └── qrcode-php-shifthub.png
+│   ├── /routes
+│   │   └── Routes.php
+│   ├── /scripts
+│   │   └── Accordion.php
+│   └── /styles
+│       ├── fonts.css
+│       ├── sh.css
+│       ├── theme.css
+│       └── w3css_4.css
 │
 ├── /pages
 │   ├── welcome.php
 │   └── about.php
 │
-└── index.php
+├── .gitignore
+├── .htaccess
+├── database.sql
+├── manifest.json
+├── offline.html
+├── pwabuilder-sw.js
+└── README.md
 

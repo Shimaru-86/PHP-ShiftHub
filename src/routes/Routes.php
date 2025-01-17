@@ -49,7 +49,7 @@
   });
 
   Route::get('/privacidade', function () {
-    return view('privacidade');
+    return view('privacy');
   });
 
   Route::get('/register', function () {
