@@ -1,13 +1,12 @@
 <?php
   require_once __DIR__ . '/../../lib/Router.php';
-  require_once __DIR__ . '/../../lib/Middlewares/Authentication.php';
-  require_once __DIR__ . '/../../lib/Middlewares/Log.php';
-  require_once __DIR__ . '/../../lib/Middlewares/Validation.php';
+  require_once __DIR__ . '/../../lib/middlewares/Authentication.php';
+  require_once __DIR__ . '/../../lib/middlewares/Log.php';
+  require_once __DIR__ . '/../../lib/middlewares/Validation.php';
   require_once __DIR__ . '/../../config/Config.php';
 
   //Função de redirecionamento de Rotas
   function redirect($url) {
-    header("Location: $url");
     header('Location: ' . BASE_URL . $url);
     exit;
   }
@@ -69,7 +68,10 @@
 
   // Rota para processar o logout
   Route::get('/logout', function () {
-    session_start();  // Inicia a sessão (caso não tenha sido iniciada)
+    // Inicia a sessão (caso não tenha sido iniciada)
+    if (session_status() === PHP_SESSION_NONE) {
+      session_start();
+    }
     session_unset();  // Remove todas as variáveis de sessão
     session_destroy(); // Destrói a sessão
     return redirect('/login');

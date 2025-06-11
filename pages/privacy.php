@@ -7,7 +7,7 @@
 
 <body class="w3-theme-l5">
   <div class="w3-container w3-card-4 w3-margin w3-light-grey w3-round-large">
-    <h1 class="w3-center">Política de Privacidade - RASCUNHO</h1>
+    <h1 class="w3-center">Política de Privacidade</h1>
     <p>Esta Política de Privacidade descreve como coletamos, usamos e protegemos suas informações ao utilizar nosso site/aplicativo.</p>
 
     <h2>Informações que Coletamos</h2>

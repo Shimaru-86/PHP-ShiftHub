@@ -29,14 +29,19 @@
     </div>
   </section>
 
+  <!-- Border Section -->
+  <?php include("./src/components/samples/Borders.php"); ?>
+
+  <!-- About Sections -->
+  <?php include("./src/components/samples/About_01.php"); ?>
+
   <!-- Footer -->
   <?php include("./src/components/footer/Footer.php"); ?>
 
   <!-- Scripts JavaScript -->
-  <script type="text/javascript" src="./src/scripts/Accordions.js">
-    // Used to open and close the accordions
-    // Usado para abrir e fechar acordeões
-  </script>
+
+  <!-- Open and close the accordions - Abrir e fechar acordeões -->
+  <script type="text/javascript" src="./src/scripts/Accordions.js"></script>
 
 </body>
 </html>

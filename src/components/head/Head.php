@@ -7,7 +7,7 @@
 <!-- Folhas de Estilo -->
 <link rel="stylesheet" href="./src/styles/w3css_4.css">
 <link rel="stylesheet" href="./src/styles/theme.css">
-<link rel="stylesheet" href="./src/styles/sh_custom.css">
+<link rel="stylesheet" href="./src/styles/sh.css">
 <link rel="stylesheet" href="./src/styles/fonts.css">
 <!-- Fonts do Google -->
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
@@ -18,7 +18,6 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!-- Manifest -->
 <link rel="manifest" href="./manifest.json" />
-<link rel="icons" href="./icons.json" />
 <!-- Service Worker -->
 <script>
   if ('serviceWorker' in navigator) {
